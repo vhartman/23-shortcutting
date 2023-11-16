@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<robot name="myrobot">
+<link name="base_link">
+  <visual>
+    <geometry>
+      <cylinder length="1.6" radius="0.04" />
+      <material> <color rgba="[0.9, 0.1, 0.1, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_ssBox />
+      <material> <color rgba="[0.4, 1, 0.4, 0.3]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_ssBox />
+      <material> <color rgba="[0.4, 0.4, 0.4, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_ssBox />
+      <material> <color rgba="[0.4, 0.4, 0.4, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_ssBox />
+      <material> <color rgba="[0.4, 0.4, 0.4, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_ssBox />
+      <material> <color rgba="[0.4, 0.4, 0.4, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_ssBox />
+      <material> <color rgba="[1, 0.5, 0.5, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_ssBox />
+      <material> <color rgba="[1, 1, 1, 0.1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[0.8, 0.8, 0.8]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <cylinder length="0.5" radius="0.1" />
+      <material> <color rgba="[0.6, 0.6, 0.6, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[1, 1, 1, 0.2]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <cylinder length="0.18" radius="0.07" />
+      <material> <color rgba="[1, 0.5, 0.5, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <cylinder length="0.17" radius="0.081" />
+      <material> <color rgba="[0.6, 0.6, 0.6, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[0.8, 0.8, 0.8]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[1, 1, 1, 0.2]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <cylinder length="0.141" radius="0.06" />
+      <material> <color rgba="[1, 0.5, 0.5, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <cylinder length="0.14" radius="0.066" />
+      <material> <color rgba="[0.6, 0.6, 0.6, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[0.8, 0.8, 0.8]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[1, 1, 1, 0.2]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <sphere radius="0.03" />
+      <material> <color rgba="[1, 0.5, 0.5, 1]" /> </material>
+    </geometry>
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+</link>
+<link name="stick">
+</link>
+<joint name="stick" type="fixed" >
+  <parent link="base_link"/>
+  <child  link="stick"/>
+  <origin xyz="[0, 0, 0]" rpy="[0, 0, 0]" />
+</joint>
+<link name="a0_base">
+  <visual>
+    <geometry>
+      <UNKNOWN_ssBox />
+      <material> <color rgba="[1, 1, 1, 0.1]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0]" rpy="[0, 0, 0]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+</link>
+<joint name="a0_base" type="fixed" >
+  <parent link="base_link"/>
+  <child  link="a0_base"/>
+  <origin xyz="[-2, 0, 0.2]" rpy="[0, 0, 0]" />
+</joint>
+<link name="a0_rot">
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[0.8, 0.8, 0.8]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0.3]" rpy="[0, 0, 0]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[1, 1, 1, 0.2]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0]" rpy="[0, 0, 0]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <cylinder length="0.5" radius="0.1" />
+      <material> <color rgba="[0.6, 0.6, 0.6, 1]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0]" rpy="[0, 0, 0]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+</link>
+<joint name="a0_rot" type="fixed" >
+  <parent link="a0_base"/>
+  <child  link="a0_rot"/>
+  <origin xyz="[0, 0, 0]" rpy="[0, 0, 0]" />
+</joint>
+<link name="a0_joint1">
+  <visual>
+    <geometry>
+      <cylinder length="0.18" radius="0.07" />
+      <material> <color rgba="[1, 0.5, 0.5, 1]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0]" rpy="[1.55969, 1.55969, 1.5708]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <cylinder length="0.17" radius="0.081" />
+      <material> <color rgba="[0.6, 0.6, 0.6, 1]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0]" rpy="[1.55969, 1.55969, 1.5708]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[0.8, 0.8, 0.8]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0.4]" rpy="[0, 0, 0]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[1, 1, 1, 0.2]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0]" rpy="[0, 0, 0]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+</link>
+<joint name="a0_joint1" type="fixed" >
+  <parent link="a0_rot"/>
+  <child  link="a0_joint1"/>
+  <origin xyz="[0, 0, 0.5]" rpy="[0, 0, 0]" />
+</joint>
+<link name="a0_joint2">
+  <visual>
+    <geometry>
+      <cylinder length="0.141" radius="0.06" />
+      <material> <color rgba="[1, 0.5, 0.5, 1]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0]" rpy="[1.55969, 1.55969, 1.5708]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <cylinder length="0.14" radius="0.066" />
+      <material> <color rgba="[0.6, 0.6, 0.6, 1]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0]" rpy="[1.55969, 1.55969, 1.5708]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[0.8, 0.8, 0.8]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0.2]" rpy="[0, 0, 0]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+  <visual>
+    <geometry>
+      <UNKNOWN_capsule />
+      <material> <color rgba="[1, 1, 1, 0.2]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0]" rpy="[0, 0, 0]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+</link>
+<joint name="a0_joint2" type="fixed" >
+  <parent link="a0_joint1"/>
+  <child  link="a0_joint2"/>
+  <origin xyz="[0, 0, 0.8]" rpy="[0, 0, 0]" />
+</joint>
+<link name="a0_joint2a">
+</link>
+<joint name="a0_joint2a" type="fixed" >
+  <parent link="a0_joint2"/>
+  <child  link="a0_joint2a"/>
+  <origin xyz="[0, 0, 0.45]" rpy="[0, 0, 0]" />
+</joint>
+<link name="a0_joint2b">
+</link>
+<joint name="a0_joint2b" type="fixed" >
+  <parent link="a0_joint2a"/>
+  <child  link="a0_joint2b"/>
+  <origin xyz="[0, 0, 0]" rpy="[0, 0, 0]" />
+</joint>
+<link name="a0_joint2c">
+  <visual>
+    <geometry>
+      <sphere radius="0.03" />
+      <material> <color rgba="[1, 0.5, 0.5, 1]" /> </material>
+    </geometry>
+  <origin xyz="[0, 0, 0.01]" rpy="[3.14159, 0, 0]" />
+  <inertial>  <mass value="1"/>  </inertial>
+  </visual>
+</link>
+<joint name="a0_joint2c" type="fixed" >
+  <parent link="a0_joint2b"/>
+  <child  link="a0_joint2c"/>
+  <origin xyz="[0, 0, 0]" rpy="[0, 0, 0]" />
+</joint>
+</robot>
