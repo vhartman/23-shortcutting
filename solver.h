@@ -252,14 +252,6 @@ class JointPTR: public Solver{
           else if (plannerType_ == PlannerType::LPRM){
             s.planner = std::make_shared<LPRM>(cp, P_);
           }
-          else if (plannerType_ == PlannerType::HLPRM){
-            s.planner = std::make_shared<HierarchicalLPRM>(cp, P_, cnt++, false, true, true, base_);
-          }
-          else if (plannerType_ == PlannerType::OMPLEITStar){
-            //ompl::msg::setLogLevel(ompl::msg::LOG_ERROR);
-            s.planner = std::make_shared<OMPLPlanner>(cp, P_, OMPLPlannerType::EITStar);
-            //s.planner = std::make_shared<HierarchicalLPRM>(cp, P_, cnt++, false, true, true, base_);
-          }
 
           s.planner->setup(q0, qT);
         }

@@ -6,8 +6,6 @@
 
 #include <PlanningSubroutines/ConfigurationProblem.h>
 
-#include "corput.h"
-
 #ifndef _POSTPROCESSING_H
 #define _POSTPROCESSING_H
 
@@ -249,6 +247,15 @@ arr constructShortcutPath(const rai::Configuration &C, const arr& path,
 enum class PartialShortcutType {Single, Subset, Full};
 enum class SubsetSampling {Uniform, Other};
 
+struct IterationData{
+  bool success;
+  uint idx1;
+  uint idx2;
+  double length;
+  std::vector<uint> indices;
+  double time;
+};
+
 PathAndStatistics partial_shortcut(rai::Configuration C, const arr &path, const double resolution = 0.01, const double discretization_resolution = 0.1, const uint max_iter = 400, PartialShortcutType type=PartialShortcutType::Subset, SubsetSampling sampling_type = SubsetSampling::Uniform){
   std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
 
@@ -257,6 +264,8 @@ PathAndStatistics partial_shortcut(rai::Configuration C, const arr &path, const 
 
   std::vector<double> times;
   std::vector<double> costs;
+
+  std::vector<IterationData> data;
 
   times.push_back(0.);
   costs.push_back(pathLength(path));

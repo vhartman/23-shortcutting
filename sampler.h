@@ -225,17 +225,4 @@ class JointKeyframeSampler{
     }
 };
 
-class AuxilaryKeyframeSampler{};
-
-class CostRegularizedSampler{};
-
-class NextKeyframeSampler: public JointKeyframeSampler{
-  public:
-    NextKeyframeSampler(const std::vector<arr> prevKeyframes, std::function<void (KOMO &, int)> komoInit) 
-      : JointKeyframeSampler(prevKeyframes, komoInit, prevKeyframes.size()+1) {
-    };
-
-  private:
-};
-
 #endif
