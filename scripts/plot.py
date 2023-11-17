@@ -5,8 +5,6 @@ import csv
 import collections
 import os
 
-from util import *
-
 from scipy import interpolate
 
 colors = plt.rcParams['axes.prop_cycle'].by_key()['color']
